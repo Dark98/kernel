@@ -2291,7 +2291,7 @@ start_only:
 
 err:
 	stop_isp.stop_only = false;
-	stop_isp.hw_stop_cmd = CAM_ISP_HW_STOP_IMMEDIATELY;
+	stop_isp.hw_stop_cmd = CAM_ISP_HW_STOP_MAX;
 	stop_args.ctxt_to_hw_map = start_isp->hw_config.ctxt_to_hw_map;
 	stop_args.args = (void *)(&stop_isp);
 
